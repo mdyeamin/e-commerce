@@ -5,6 +5,26 @@
     background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 48%, #e9481a 50%, transparent 52%, transparent 100%);
 }
 
-.add-card{
-   /* display: none;  */
+.add_to_card{
+    /* width: 40px;
+    height: 70px; */
+    /* position: absolute; */
+}
+.card-btn{
+min-width: 110px;
+min-height: 30px;
+
+}
+.card-icon{
+    display: none;
+}
+.add-card :hover .card-icon{
+    display: inline-block;
+    
+}
+.add-card :hover .AddToCart{
+display: none;
+}
+.AddToCart {
+/* position: relative; */
 }
