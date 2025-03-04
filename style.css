@@ -1,30 +1,55 @@
-
 .price--line-through {
-    background-color: transparent;
-    background-image: gradient(linear, 19.1% -7.9%, 81% 107.9%, color-stop(0, transparent), color-stop(.48, transparent), color-stop(.5, #e9481a), color-stop(.52, transparent), color-stop(1, transparent));
-    background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 48%, #e9481a 50%, transparent 52%, transparent 100%);
+  background-color: transparent;
+  background-image: gradient(
+    linear,
+    19.1% -7.9%,
+    81% 107.9%,
+    color-stop(0, transparent),
+    color-stop(0.48, transparent),
+    color-stop(0.5, #e9481a),
+    color-stop(0.52, transparent),
+    color-stop(1, transparent)
+  );
+  background-image: repeating-linear-gradient(
+    163deg,
+    transparent 0%,
+    transparent 48%,
+    #e9481a 50%,
+    transparent 52%,
+    transparent 100%
+  );
 }
 
-.add_to_card{
-    /* width: 40px;
-    height: 70px; */
-    /* position: absolute; */
+.card-btn {
+  width: 110px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
 }
-.card-btn{
-min-width: 110px;
-min-height: 30px;
 
-}
-.card-icon{
-    display: none;
-}
-.add-card :hover .card-icon{
-    display: inline-block;
-    
-}
-.add-card :hover .AddToCart{
-display: none;
-}
 .AddToCart {
-/* position: relative; */
+  top: 8px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
 }
+
+.add-card :hover .AddToCart {
+  position: absolute;
+  top: -40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-icon {
+  position: absolute;
+  top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.add_to_card :hover .card-icon {
+  top: 10px;
+}
+
+/* .AddToCart :hover {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+} */
