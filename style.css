@@ -20,6 +20,26 @@
   );
 }
 
+.combo-card {
+  position: relative;
+  overflow: hidden;
+  height: 310px;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.card-title {
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    width: -webkit-fill-available;
+}
+
+.combo-card :hover .card-title {
+    transform: translateY(-80px); 
+  /* bottom: 0; */
+  transition: all 0.3s ease-in-out;
+}
+
 .card-btn {
   width: 110px;
   height: 30px;
