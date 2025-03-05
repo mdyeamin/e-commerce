@@ -20,25 +20,28 @@
   );
 }
 
-.combo-card {
-  position: relative;
-  overflow: hidden;
-  height: 310px;
-  /* transition: all 0.3s ease-in-out; */
-}
+@media only screen and (min-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+  .combo-card {
+    position: relative;
+    overflow: hidden;
+    height: 310px;
+    /* transition: all 0.3s ease-in-out; */
+  }
 
-.card-title {
+  .card-title {
     position: absolute;
     transition: all 0.3s ease-in-out;
     background-color: white;
     width: -webkit-fill-available;
 }
-
 .combo-card :hover .card-title {
-    transform: translateY(-80px); 
-  /* bottom: 0; */
-  transition: all 0.3s ease-in-out;
+  transform: translateY(-80px); 
+/* bottom: 0; */
+transition: all 0.3s ease-in-out;
 }
+
+
 
 .card-btn {
   width: 110px;
@@ -68,6 +71,14 @@
 .add_to_card :hover .card-icon {
   top: 10px;
 }
+
+}
+
+
+
+
+
+
 
 /* .AddToCart :hover {
   position: absolute;
